@@ -1,5 +1,5 @@
 overwrite: true
-schema: "http://localhost:" + (process.env.PORT || 400) 
+schema: "http://0.0.0.0:" + (process.env.PORT || 400) 
 generates:
   ./src/generated/graphql.ts:
     plugins:
