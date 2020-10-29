@@ -9,7 +9,7 @@ const server = new apollo_server_1.ApolloServer({
     typeDefs: schema_1.typeDefs,
     resolvers: resolvers_1.resolvers
 });
-server.listen(process.env.PORT || 400).then(({ url }) => {
+server.listen(process.env.PORT).then(({ url }) => {
     console.log(`🚀 Server ready at ${url}`);
 });
 //# sourceMappingURL=index.js.map
